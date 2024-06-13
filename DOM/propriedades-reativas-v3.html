@@ -6,7 +6,7 @@
 
     <p>Contador: {{contador}}</p>
     <p>Contador: {{contador}} | {{ contador2 }}</p>
-    <p>Resultado: {{ resultado }}</p>
+    <p>Resultado: {{ resultado() }}</p>
 </div>
 
 <script>
@@ -17,11 +17,18 @@
             contador2:0,
         },
         computed: {
-            resultado(){
-                console.log("Resultado chamado...")
-                return this.contador >= 5 ? 'Maior ou igual a 5': 'Menor que 5'
-            }
+            // resultado(){
+            //     console.log("Resultado chamado...")
+            //     return this.contador >= 5 ? 'Maior ou igual a 5': 'Menor que 5'
+            // }
         /* a propriedade computada so altera o valor quando a funcao resultado é chamada, coisa que o contador2 nao esta fazendo */
+        },
+        watch:{
+          contador(){
+              setTimeout(()=>{
+                  this.contador = 0
+              }, 2000)
+          }
         },
         methods:{
             aumentar(){
@@ -30,10 +37,10 @@
             diminuir(){
                 this.contador--
             },
-            // resultado(){
-            //     console.log("Resultado chamado...")
-            //     return this.contador >= 5 ? 'Maior ou igual a 5': 'Menor que 5'
-            // }
+            resultado(){
+                console.log("Resultado chamado...")
+                return this.contador >= 5 ? 'Maior ou igual a 5': 'Menor que 5'
+            }
         }
     })
 </script>

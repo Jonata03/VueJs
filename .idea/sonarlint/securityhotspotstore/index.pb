@@ -1,6 +1,4 @@
 
-R
-"primeira_app/priemeira-app-v1.html,e/d/ed6719809ad90035a231a9497e0f80d8a2a68b98
 D
 DOM/template-v1.html,7/3/73c3bae25cab7f1e4aee3529f7f8c886906a3d92
 D
@@ -13,8 +11,6 @@ D
 DOM/template-v5.html,1/c/1c30acf67dc8ad3838bdd830c002f97a43fdc947
 D
 DOM/template-v6.html,7/6/7639bd489735a9dc89857080dd9f5769e29aeaa7
-T
-$DOM/22_hora_de_praticar_template.rar,a/8/a8a4726d5bc36c4d3eaecf82825fc7a0dae16b04
 B
 DOM/desafio/app.js,b/9/b91157aeeb642ebf472cab4ab0220ae4101669e1
 F
@@ -39,3 +35,25 @@ Q
 !DOM/propriedades-reativas-v1.html,4/b/4b11a3365bcacf1a8b25892ab09f29f8c94add0b
 Q
 !DOM/propriedades-reativas-v2.html,4/1/418a8382e18bc56f28d76ae74809b6b7fb0c5608
+Q
+!DOM/propriedades-reativas-v3.html,1/6/16ec2025d0de0eb793bcc71471baa017f8e975b3
+I
+DOM/sintaxe-reduzida.html,2/d/2de77392f578370541ae78eb90ac41745d855525
+G
+DOM/desafio3/index.html,4/f/4f5fe6f4a83a68b9f26dab4f72734ebd729e07e0
+C
+DOM/desafio3/app.js,4/b/4b442635de2c816e67d4bffd8537f4bcdf3c6218
+B
+DOM/estilo-v1.html,7/2/725dda1b538cf8025420ab576b8096c0a8878100
+B
+DOM/estilo-v2.html,9/a/9ac56385b8671dc19167ba3c759fd4d585a9b2dd
+B
+DOM/estilo-v3.html,f/6/f6abed11edba58e18b29e1deb200051ee80992d7
+B
+DOM/estilo-v4.html,9/9/998a20ed58194aa36338fd026952cd5a54f1f9f1
+C
+DOM/desafio4/app.js,9/a/9a30a9b61e7ebf8205d24d4c8a81abbd135819da
+G
+DOM/desafio4/index.html,0/3/0387228782233234e327e126ddf2e41fa67e2e18
+G
+DOM/desafio4/styles.css,7/9/791b4a67809a1ae6a632bc986bb4088cbdcd0616
