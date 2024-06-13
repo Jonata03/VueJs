@@ -57,3 +57,11 @@ G
 DOM/desafio4/index.html,0/3/0387228782233234e327e126ddf2e41fa67e2e18
 G
 DOM/desafio4/styles.css,7/9/791b4a67809a1ae6a632bc986bb4088cbdcd0616
+Z
+*condicionais-e-listas/condicionais-v1.html,9/6/9672080c26320ecb24699dac11a8c60f4ea08026
+Z
+*condicionais-e-listas/condicionais-v2.html,9/a/9a1ae7513be0cca2acd319e7b39e839d29864341
+Z
+*condicionais-e-listas/condicionais-v3.html,d/1/d152271251492f8bab7e42301dac67992ff594e4
+Z
+*condicionais-e-listas/condicionais-v4.html,6/b/6b0de689a7574ea8e88e5518c17a7b3c7ea24724
