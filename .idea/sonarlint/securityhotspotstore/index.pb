@@ -65,3 +65,11 @@ Z
 *condicionais-e-listas/condicionais-v3.html,d/1/d152271251492f8bab7e42301dac67992ff594e4
 Z
 *condicionais-e-listas/condicionais-v4.html,6/b/6b0de689a7574ea8e88e5518c17a7b3c7ea24724
+Y
+)projeto - matador de  monstros/index.html,d/9/d9527a67420c7f190145a96c034beddcdfddfa5c
+X
+(projeto - matador de  monstros/style.css,6/a/6a0da54674f2f0793a1246b7326d58d6a3411985
+U
+%projeto - matador de  monstros/app.js,0/9/09b15a7157d37d7c7091dcd1cd3222e13a558e45
+X
+(condicionais-e-listas/desafio/index.html,a/3/a3b4241109d09a26e243c7395fa8d0d8661e0a60

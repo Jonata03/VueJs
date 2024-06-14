@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Matador de Monstro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
+    <script src="https://unpkg.com/vue@2"></script>
+</head>
+<body>
+<div id="app">
+    <div class="panel scores">
+        <div class="score">
+            <h1>Jogador</h1>
+            <div class="life-bar">
+                <div class="life"
+                     :class='{cuidado: porcentagemVidaJogador<50,perigo: porcentagemVidaJogador < 15}'
+                    :style="{width:porcentagemVidaJogador+'%'}"></div>
+            </div>
+            <div>{{porcentagemVidaJogador}}%</div>
+        </div>
+        <div class="score">
+            <h1>Monstro</h1>
+            <div class="life-bar">
+                <div class="life"
+                     :class='{cuidado: porcentagemVidaMonstro<50,perigo: porcentagemVidaMonstro < 15}'
+                     :style="{width:porcentagemVidaMonstro+'%'}"></div>
+            </div>
+            <div>{{porcentagemVidaMonstro}}%</div>
+        </div>
+    </div>
+    <div class="panel result" v-if="resultadoJogo">
+        <div class="win" v-if="vitoria">Você ganhou!!! :)</div>
+        <div class="lose" v-if="!vitoria">Você perdeu! :(</div>
+    </div>
+    <div class="panel buttons">
+        <template v-if="!btnIniciarJogo">
+            <button class="btn attack" @click="ataque">Ataque</button>
+            <button class="btn especial-attack" @click="ataqueEspecial">Ataque Especial</button>
+            <button class="btn heal" @click="curar">Curar</button>
+            <button class="btn give-up" @click="desistir">Desistir</button>
+        </template>
+        <button class="btn new-game" v-if="btnIniciarJogo"
+                @click="iniciaJogo">{{textoBtnIniciarJogo}}
+        </button>
+    </div>
+    <div class="panel logs" v-if="log">
+        <ul v-for="texto of log">
+            <li :class="texto.cls">{{texto.text}}</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
+<script src="app.js"></script>
