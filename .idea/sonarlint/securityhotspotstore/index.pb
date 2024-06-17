@@ -73,3 +73,9 @@ U
 %projeto - matador de  monstros/app.js,0/9/09b15a7157d37d7c7091dcd1cd3222e13a558e45
 X
 (condicionais-e-listas/desafio/index.html,a/3/a3b4241109d09a26e243c7395fa8d0d8661e0a60
+J
+instancia-vue/meu-vue.html,a/b/ab22cc8cfba836622b93bae031fba9bd83441e97
+Q
+!instancia-vue/componente-vue.html,1/a/1ac1b2ce41c86a9c55201c7b8c40820928d0ac5f
+Z
+*instancia-vue/intancia-vue-ciclo_vida.html,2/f/2f1bf5ecaf4ed65e474f82667ec4550f6de25967
