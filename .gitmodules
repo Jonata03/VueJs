@@ -1,0 +1,3 @@
+[submodule "componentes/componente-desafio"]
+	path = componentes/componente-desafio
+	url = https://github.com/Jonata03/VueJs.git
