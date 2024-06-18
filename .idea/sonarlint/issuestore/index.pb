@@ -121,3 +121,5 @@ h
 8componentes/componente-desafio/src/components/footer.vue,2/4/24010e501eb863d5b722bcd700cad80d0e52b08a
 l
 <componentes/componente-desafio/src/components/footer-vue.vue,4/8/481a994b38c370f25bdff1acac6d781bec17150e
+i
+9componentes/componente-desafio/src/components/App-bar.vue,8/4/84b23df3be37fb7f3cc8d3d6d357a64544d33cb6
