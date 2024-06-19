@@ -31,13 +31,14 @@ export default {
         novo: this.nome,
         antigo
       })
-    },
-    created() {
-      barramento.$on('idadeMudou', idade => {
-        this.idade = idade
-      })
     }
+  },
+  created() {
+    barramento.quandoIdadeMudar(idade => {
+      this.idade = idade
+    })
   }
+
 }
 </script>
 
