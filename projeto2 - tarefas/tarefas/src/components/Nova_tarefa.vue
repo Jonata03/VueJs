@@ -1,10 +1,16 @@
 <template>
   <div>
     <form>
-      <input type="text" name="" id="" placeholder="Nova Tarefa?" class="campo-texto">
-      <a class="btn-submit" @click="criarTarefa">+</a>
+      <input type="text"
+             autofocus
+             placeholder="Nova Tarefa?"
+             class="campo-texto"
+
+             @keypress.enter.prevent="criarTarefa">
+<!--            .prevente nao deixa que a pagina recarregue-->
+      <a class="btn-submit"
+         @click="criarTarefa" >+</a>
     </form>
-    <div v-for="(valor,i) in textos">{{i}}-{{valor}}</div>
   </div>
 </template>
 <script>
@@ -20,9 +26,11 @@ export default {
       barramento.setTexto(texto)
     },
     criarTarefa(){
-      const texto = document.querySelector(".campo-texto").value
-      this.textos.unshift(texto)
+      let texto = document.querySelector(".campo-texto")
+      let conteudoTexto = texto.value
+      this.textos.unshift({texto: conteudoTexto, concluido: false})
       barramento.setTexto(this.textos)
+      texto.value = ""
     }
   }
 }

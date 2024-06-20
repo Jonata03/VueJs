@@ -6,7 +6,13 @@ export default new Vue({
         },
         onTexto(callback){
             this.$on('textoConfirmado',callback)
-        }
+        },
+        setQuantidadeTasks(quantidade){
+            this.$emit('tasksConcluidas',quantidade)
+        },
+        onQuantidadeTasks(callback){
+            this.$on('tasksConcluidas',callback)
+        },
 
     }
 })

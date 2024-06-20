@@ -11,6 +11,7 @@
 import BarraPorcentual from "@/components/Barra_porcentual.vue";
 import NovaTarefa from "@/components/Nova_tarefa.vue";
 import Tarefas from "@/components/Tarefas.vue"
+
 export default {
 components:{
   BarraPorcentual,
@@ -33,7 +34,7 @@ components:{
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		height: 100vh;
+		height: 100vh;overflow: auto;
 	}
 
 	#app h1 {
