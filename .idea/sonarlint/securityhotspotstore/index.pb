@@ -173,3 +173,21 @@ _
 /criando_diretivas/diretivas-desafio/src/App.vue,a/2/a259af62a3508a9aebe6a0e24ca7ea1fb2a1084c
 _
 /criando_diretivas/diretivas-desafio/src/main.js,5/b/5b00a3dc214405ecad5492e26830c02ca703347c
+f
+6filtros e mixins/filtros-mixins-exercicios/src/App.vue,0/9/09654d44452987bb21429441fdc591998fd78ee8
+f
+6filtros e mixins/filtros-mixins-exercicios/src/main.js,0/d/0d36c9e8be873e749c55ff7d11d693bd9292cb8d
+i
+9filtros e mixins/filtros-mixins-exercicios/src/Frutas.vue,0/9/095776feb18fe2e2e40707b2b9cd9fdf559cfd25
+n
+>filtros e mixins/filtros-mixins-exercicios/src/frutasMixins.js,2/7/27eb4d680b65b318f36bfe599e8171e2a1591dc6
+n
+>filtros e mixins/filtros-mixins-exercicios/src/usuarioMixin.js,7/6/76ee8772bd1bb1e0b1b3c58a75173913e772c212
+c
+3filtros e mixins/filtros-mixins-desafio/src/App.vue,4/2/42644b745ee661ce4f6594ef07f75ee94a5170f1
+c
+3filtros e mixins/filtros-mixins-desafio/src/main.js,b/f/bf52aded06891dc51786a7d1dc40e81ac9fa7c71
+k
+;filtros e mixins/filtros-mixins-desafio/src/desafioMixin.js,5/d/5d89a5634e26e4d54e83e66472b285217a82093a
+Z
+*animacoes/animacoes-exercicios/src/App.vue,9/3/93925f3021341ca152848d6c43896424912d9357
