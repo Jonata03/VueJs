@@ -191,3 +191,9 @@ k
 ;filtros e mixins/filtros-mixins-desafio/src/desafioMixin.js,5/d/5d89a5634e26e4d54e83e66472b285217a82093a
 Z
 *animacoes/animacoes-exercicios/src/App.vue,9/3/93925f3021341ca152848d6c43896424912d9357
+b
+2projeto3-the stock trader/stock-trader/src/App.vue,f/2/f268efbdb1aac9535287568fb1e4e138475e37e5
+m
+=projeto3-the stock trader/stock-trader/src/plugins/vuetify.js,b/e/be325b1e87059a7c4c329b1ae820d05c4836e13a
+n
+>projeto3-the stock trader/stock-trader/src/components/menu.vue,8/2/82e5be3beb43eb6b60c8ecfa3778a88d587f19c8
