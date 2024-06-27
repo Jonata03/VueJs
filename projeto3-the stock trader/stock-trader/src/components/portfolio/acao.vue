@@ -1,8 +1,13 @@
 <template>
   <v-flex class="pr-3 pb-3" xs12 md6 lg4>
-    <v-card class="green darken-3 white--text">
+    <v-card class="blue darken-3 white--text">
       <v-card-title class="headline">
-        <strong>{{acao.nome}} <small>(preco: {{acao.preco}})</small></strong>
+        <strong>
+          {{ acao.nome }}
+          <small>
+            (preco: {{ acao.preco }} | Qtde:{{acao.quantidade}})
+          </small>
+        </strong>
       </v-card-title>
     </v-card>
     <v-card>
@@ -11,31 +16,35 @@
                       type="number"
                       class="mr-2"
                       v-model.number="quantidade"/>
-        <v-btn class="green darken-3 white--text"
+        <v-btn class="blue darken-3 white--text"
                :disabled="quantidade<=0 || !Number.isInteger(quantidade)"
-               @click="comprarAcao"
-        >Comprar</v-btn>
+               @click="venderAcao"
+        >Vender
+        </v-btn>
       </v-container>
     </v-card>
   </v-flex>
 </template>
 <script>
+import{mapActions} from "vuex";
 
 export default {
-  props:['acao'],
-  data(){
-    return{
+  props: ['acao'],
+  data() {
+    return {
       quantidade: 0
     }
   },
-  methods:{
-    comprarAcao(){
+  methods: {
+    ...mapActions({vendendoAcao: 'venderAcao'}),
+    venderAcao() {
       const ordem = {
         acaoId: this.acao.id,
         acaoPreco: this.acao.preco,
         quantidade: this.quantidade
       }
-      this.$store.dispatch('comprarAcao',order)
+      this.vendendoAcao(order)
+      // this.$store.dispatch('venderAcao', order)
       this.quantidade = 0
     }
   }

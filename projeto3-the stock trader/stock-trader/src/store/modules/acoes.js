@@ -11,10 +11,9 @@ export default {
     },
     actions: {
         comprarAcao({commit}, order) {
-            commit()
+            commit('comprarAcao',order)
         },
         iniciarAcoes({commit}) {
-            console.log('iniciando acoes')
             commit('setAcoes', acoes)
         }
     },

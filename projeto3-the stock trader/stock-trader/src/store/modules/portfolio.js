@@ -1,14 +1,14 @@
-export default{
-    state:{
+export default {
+    state: {
         funds: 10000,
-        acoes:[]
+        acoes: []
     },
-    mutations:{
-        comprarAcao(state, {acaoId, quantidade, acaoPreco}){
+    mutations: {
+        comprarAcao(state, {acaoId, quantidade, acaoPreco}) {
             const record = state.acoes.find(elemento => elemento.id == acaoId)
-            if(record){
+            if (record) {
                 record.quantidade += quantidade
-            }else{
+            } else {
                 state.acoes.push({
                     id: acaoId,
                     quantidade: quantidade,
@@ -16,26 +16,27 @@ export default{
             }
             state.funds -= acaoPreco * quantidade
         },
-        venderAcao(state,{acaoId, quantidade, acaoPreco}){
-            const record= state.acoes.find(elemento => elemento.id == acaoId)
-            if(record.quantidade > quantidade){
+        venderAcao(state, {acaoId, quantidade, acaoPreco}) {
+            const record = state.acoes.find(elemento => elemento.id == acaoId)
+            if (record.quantidade > quantidade) {
                 record.quantidade -= quantidade
-            }else{
-                state.acoes.splice(state.acoes.indexOf(record),1)
+            } else {
+                state.acoes.splice(state.acoes.indexOf(record), 1)
             }
             state.funds += acaoPreco * quantidade
         }
     },
-    actions:{
-        venderAcao({commit},order) {
+    actions: {
+        venderAcao({commit}, order) {
             commit('venderAcao', order)
         },
 
     },
-    getters:{
-        acoesPortfolio(state,getters){
+    getters: {
+        acoesPortfolio(state, getters) {
             return state.acoes.map(acao => {
-                const record = getters.acoes.find(elemento => elemento.id == acao.id){
+                const record = getters.acoes.find(elemento => elemento.id == acao.id)
+                {
                     return {
                         id: acao.id,
                         quantidade: acao.quantidade,
@@ -45,7 +46,7 @@ export default{
                 }
             })
         },
-        funds(state){
+        funds(state) {
             return state.funds
         }
     }
